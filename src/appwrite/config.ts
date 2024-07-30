@@ -14,8 +14,8 @@ type LoginUserAccount = {
 
 const appwriteClient = new Client();
 
-appwriteClient
-  .setEndpoint(conf.appwwriteurl)
+appwriteClient  
+  .setEndpoint(conf.appwwriteurl) 
   .setProject(conf.appwriteprojectid);
 
 export const account = new Account(appwriteClient);
